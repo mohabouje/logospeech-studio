@@ -13,8 +13,7 @@ LogoSpeech Studio es un proyecto de software libre multiplataforma desarrollado 
 Se basa en el análisis temporal/espectral de la señal del habla para la extración de parámetros, entre los más destacados:
 
 
-```
-#!c++
+
 
 * Enegía de la señal.
 * Tasa de cruces por cero.
@@ -24,7 +23,7 @@ Se basa en el análisis temporal/espectral de la señal del habla para la extrac
 * Espectro LPC de la señal.
 * Cepstrum de la señal.
 * Espectro mediante banco de filtros a diferentes escalas.
-```
+
 
 
 Ha sido testeada y compilada en diferentes sistemas operativos:
@@ -54,26 +53,19 @@ La aplicación ha sido optimizada para que sea totalmente compatible con cualqui
 ```
 #!c++
 
-LogoSpeech Studio 
-Copyright © 2015 Mohammed Boujemaoui
+    LogoSpeech Studio 
+    Copyright © 2015 Mohammed Boujemaoui
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-   http://www.apache.org/licenses/LICENSE-2.0
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
-
-```
-#!c++
-
-LogoSpeech Studio  uses code from Aubio Library sample available 
- on Aubio Library page:
-http://aubio.org/
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
