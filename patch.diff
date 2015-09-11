@@ -1,0 +1,65 @@
+From 86358d63d3fa78bcbecee7c3d562bf5f0f9d18f5 Mon Sep 17 00:00:00 2001
+From: Mohammed Boujemaoui <mohammed@appfluence.com>
+Date: Sun, 30 Aug 2015 14:37:09 +0200
+Subject: [PATCH] Improve time processing progressbar. Allways show a value
+ lower than BUFFER_TIME_MS
+
+---
+ mainwindow.cpp | 6 ++++--
+ mainwindow.h   | 2 ++
+ 2 files changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/mainwindow.cpp b/mainwindow.cpp
+index ac78c26..00336bc 100644
+--- a/mainwindow.cpp
++++ b/mainwindow.cpp
+@@ -46,6 +46,7 @@ MainWindow::MainWindow(QWidget *parent) :
+     ui(new Ui::MainWindow),
+     _timer(new QElapsedTimer),
+     _progressBar(new QProgressBar(this)),
++    _elapsedTime(0),
+     _recorder(new Recorder),
+     _appSettings(new AppSettings),
+     _recordSettingsDialog(new RecorderSettingsDialog),
+@@ -61,7 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
+     ui->setupUi(this);
+ 
+ 
+-    _progressBar->setMaximum(40);
++    _progressBar->setMaximum(BUFFER_TIME_MS);
+     _progressBar->setMinimum(0);
+     _progressBar->setMaximumWidth(200);
+     ui->statusBar->addPermanentWidget(_progressBar);
+@@ -455,7 +456,8 @@ void MainWindow::process(const QAudioBuffer& buffer){
+         ui->chartEnergy->replot();
+         ui->chartPitch->replot();
+         ui->chartSpectrogram->replot();
+-        _progressBar->setValue(_timer->elapsed());
++        _elapsedTime = _timer->elapsed();
++        _progressBar->setValue((_elapsedTime > BUFFER_TIME_MS) ? BUFFER_TIME_MS : _elapsedTime );
+ }
+ 
+ 
+diff --git a/mainwindow.h b/mainwindow.h
+index 995e49e..653aaff 100644
+--- a/mainwindow.h
++++ b/mainwindow.h
+@@ -27,6 +27,7 @@
+ #include "qcustomplot.h"
+ 
+ #define BUFFER_TIME 0.04
++#define BUFFER_TIME_MS 40
+ 
+ namespace Ui {
+ class MainWindow;
+@@ -77,6 +78,7 @@ private:
+     // Status bar
+     QLabel*                     _folderName;
+     QElapsedTimer*              _timer;
++    qlonglong                   _elapsedTime;
+     QProgressBar*               _progressBar;
+ 
+ 
+-- 
+1.9.5.msysgit.0
+
