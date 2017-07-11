@@ -12,14 +12,7 @@ You can modify and customize the different parameter for Digital Signal Processi
 ![enter image description here](https://lh3.googleusercontent.com/-Fbs1Gfas-Vc/WWU6e8wiqmI/AAAAAAAAA_0/JV5996KE3AcgMOsjlyworgwMbDeg6-TdQCLcBGAs/s0/Screenshot_20170711_225134.png "Screenshot_20170711_225134.png")
 
 
-### ¿ Qué diferencia a LogoSpeech? ###
-
-LogoSpeech Studio es un proyecto de software libre multiplataforma desarrollado en C/C++ con las librerias gráficas de Qt. Nace con la finalidad de servir como heraamienta de entrenamiento para el reconocimiento del habla y correcta vocalización para personas con problemas auditivos.
-
-Se basa en el análisis temporal/espectral de la señal del habla para la extración de parámetros, entre los más destacados:
-
-
-
+### Digital Signal Processing Algorithms
 
 * Energy estimation
 * Average Zero Cross Rate.
@@ -28,7 +21,7 @@ Se basa en el análisis temporal/espectral de la señal del habla para la extrac
 * Spectrogram.
 * LPC Spectrogram.
 * Cepstrum.
-* Bank FIlters.
+* Bank Filters.
 
 
 ### Contributor ###
