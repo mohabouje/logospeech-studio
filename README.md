@@ -1,10 +1,16 @@
+
 # LogoSpeech Studio. #
-## Una manera sencilla de mejorar la investigación lingüística.##
 
-LogoSpeech Studio es una herramienta para el procesado de señales bioacústicas en tiempo real. Esta diseñado para el apoyo en la docencia logópeda, centrándose en 
-soportes de ayuda para el reconocimiento y vocalización del habla.
+A new multi platform tool (Windows, Ubuntu \& Mac) that provides *visual support for the language learning of people with hearing impairments.* The tool use some of the  advantage speech signal processing technologies (Spectral Power Density, Spectrogram, melody, AZCR, Pitch, LPC Filtering ...)  to provide a suitable visual way of the main acoustic properties.
 
-**Versión 0.0**
+![enter image description here](https://lh3.googleusercontent.com/-5-k2re4TaqE/WWU6Ajo28pI/AAAAAAAAA_U/zH56u1Dy6EA-Uubd01vGX72xHLvxspgswCLcBGAs/s0/Screenshot_20170711_224831.png "Screenshot_20170711_224831.png")
+
+You can modify and customize the different parameter for Digital Signal Processing and Chart settings:
+
+![enter image description here](https://lh3.googleusercontent.com/-DxCkq9khhyY/WWU6a4fHE3I/AAAAAAAAA_s/g4URkmUhJBQNlUmGrLtu6J2NB7fl91tlACLcBGAs/s0/Screenshot_20170711_225119.png "Screenshot_20170711_225119.png")
+
+![enter image description here](https://lh3.googleusercontent.com/-Fbs1Gfas-Vc/WWU6e8wiqmI/AAAAAAAAA_0/JV5996KE3AcgMOsjlyworgwMbDeg6-TdQCLcBGAs/s0/Screenshot_20170711_225134.png "Screenshot_20170711_225134.png")
+
 
 ### ¿ Qué diferencia a LogoSpeech? ###
 
@@ -15,57 +21,24 @@ Se basa en el análisis temporal/espectral de la señal del habla para la extrac
 
 
 
-* Enegía de la señal.
-* Tasa de cruces por cero.
-* Detección de la frecuencia fundamental del hablante.
-* Detección de sonoridad de las tramas de la señal.
-* Espectro real FFT de la señal.
-* Espectro LPC de la señal.
-* Cepstrum de la señal.
-* Espectro mediante banco de filtros a diferentes escalas.
+* Energy estimation
+* Average Zero Cross Rate.
+* Pitch estimation
+* Melody estimation
+* Spectrogram.
+* LPC Spectrogram.
+* Cepstrum.
+* Bank FIlters.
 
 
-
-Ha sido testeada y compilada en diferentes sistemas operativos:
-
-1. Windows (Windows 7 o superior).
-2. Mac Os (Mac Os Lion o superior).
-3. Linux (Ubuntu 12 o superior).
-
-## ¿Como compilar la aplicación? ##
-
-La aplicación ha sido optimizada para que sea totalmente compatible con cualquier sistema operativo que soporte las librerias nativas de Qt. Simplemente, descarga el repositorio añade las dependencias y proceda a la compilación. 
-
-**Dependencias:** requerida la libreria FFTW. [http://www.fftw.org/](http://www.fftw.org/)
-
-
-### Contribuciones ###
+### Contributor ###
 
 * Intructor: [Ángel de la Torre Vega](http://dtstc.ugr.es/~atv/Paginas/personal.html)
-* Programador: Mohammed Boujemaoui Boulaghmoudi 
+* Developer: Mohammed Boujemaoui Boulaghmoudi 
 
-### Contacto ###
+### Contact ###
 
 * Mohammed Boujemaoui, [mohaboujemaoui@gmail.com](mailto:mohaboujemaoui@gmail.com)
 
-# LICENCIA #
 
-```
-#!c++
 
-    LogoSpeech Studio 
-    Copyright © 2015 Mohammed Boujemaoui
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-```
