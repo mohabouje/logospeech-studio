@@ -1,3 +1,9 @@
+![releases](https://img.shields.io/github/tag/mohabouje/logospeech-studio.svg)
+![issues](https://img.shields.io/github/issues/mohabouje/logospeech-studio.svg)
+![license](https://img.shields.io/github/license/mohabouje/logospeech-studio.svg)
+![built](https://img.shields.io/badge/built%20with-Qt/C++-6f62ba.svg)
+
+***
 
 # LogoSpeech Studio. #
 
